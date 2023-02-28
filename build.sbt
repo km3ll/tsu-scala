@@ -12,7 +12,8 @@ libraryDependencies ++= Seq(
     "org.scalacheck"              %% "scalacheck"      % "1.14.0",
     "org.scalatest"               %% "scalatest"       % "3.2.15",
     "com.typesafe.scala-logging"  %% "scala-logging"   % "3.9.2",
-    "com.github.pureconfig"       %% "pureconfig"      % "0.17.1"
+    "com.github.pureconfig"       %% "pureconfig"      % "0.17.1",
+    "com.beachape"                %% "enumeratum"      % "1.7.2"
 )
 
 scalacOptions ++= Seq(
