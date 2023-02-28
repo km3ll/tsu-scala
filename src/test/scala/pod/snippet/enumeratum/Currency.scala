@@ -15,7 +15,7 @@ object Currency extends Enum[Currency] {
   val values: IndexedSeq[Currency] = findValues
 
   def apply( code: String ): Option[Currency] = {
-    values.find(_.code.toLowerCase == code.toLowerCase )
+    values.find( _.code.toLowerCase == code.toLowerCase )
   }
 
 }
