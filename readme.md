@@ -11,5 +11,6 @@ sbt check
 ```
 ├─ main
 └─ test
+   ├─ Enum
    └─ State
 ```
