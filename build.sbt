@@ -13,6 +13,17 @@ lazy val template = (project in file("00_template"))
     )
   )
 
+lazy val snippets = (project in file("01_snippets"))
+  .settings(
+    libraryDependencies ++= Seq(
+      "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
+      "com.beachape"                %% "enumeratum"       % "1.7.2",
+      "com.typesafe"                %  "config"           % "1.3.2",
+      "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
+      "org.scalatest"               %% "scalatest"        % "3.2.15"
+    )
+  )
+
 libraryDependencies ++= Seq(
     "org.typelevel"               %% "cats-core"       % "2.0.0",
     "org.typelevel"               %% "cats-effect"     % "2.0.0",

@@ -1,4 +1,4 @@
-package pod.template
+package pod.enumeratum
 
 import com.typesafe.config.ConfigFactory
 import com.typesafe.scalalogging.LazyLogging

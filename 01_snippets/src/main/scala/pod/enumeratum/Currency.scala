@@ -1,4 +1,4 @@
-package pod.snippet.enumeratum
+package pod.enumeratum
 
 import enumeratum._
 import scala.collection.immutable.IndexedSeq

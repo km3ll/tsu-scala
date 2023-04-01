@@ -1,11 +1,11 @@
-package pod.snippet.enumeratum
+package pod.enumeratum
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
-class EnumeratumTests extends AnyFlatSpec with Matchers {
+class CurrencyTest extends AnyFlatSpec with Matchers {
 
-  "Currency Enum" should "map a valid code" in {
+  "Enum" should "map a valid code" in {
     val result: Option[Currency] = Currency( "eur" )
     result.contains( Currency.Euro ) shouldBe true
   }
