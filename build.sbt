@@ -2,19 +2,39 @@ name := "tsu-scala"
 version := "0.1"
 scalaVersion := "2.12.8"
 
-libraryDependencies ++= Seq(
-    "org.typelevel"               %% "cats-core"       % "2.0.0",
-    "org.typelevel"               %% "cats-effect"     % "2.0.0",
-    "org.apache.commons"          %  "commons-lang3"   % "3.3.2",
-    "com.typesafe"                %  "config"          % "1.3.2",
-    "ch.qos.logback"              %  "logback-classic" % "1.1.3",
-    "io.monix"                    %% "monix"           % "2.3.3",
-    "org.scalacheck"              %% "scalacheck"      % "1.14.0",
-    "org.scalatest"               %% "scalatest"       % "3.2.15",
-    "com.typesafe.scala-logging"  %% "scala-logging"   % "3.9.2",
-    "com.github.pureconfig"       %% "pureconfig"      % "0.17.1",
-    "com.beachape"                %% "enumeratum"      % "1.7.2"
-)
+// Modules
+lazy val root = (project in file("."))
+  .aggregate(template, snippets, typelevel)
+
+lazy val template = (project in file("00_template"))
+  .settings(
+    libraryDependencies ++= Seq(
+      "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
+      "com.typesafe"                %  "config"           % "1.3.2",
+      "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
+      "org.scalatest"               %% "scalatest"        % "3.2.15"
+    )
+  )
+
+lazy val snippets = (project in file("01_snippets"))
+  .settings(
+    libraryDependencies ++= Seq(
+      "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
+      "com.beachape"                %% "enumeratum"       % "1.7.2",
+      "com.typesafe"                %  "config"           % "1.3.2",
+      "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
+      "org.scalatest"               %% "scalatest"        % "3.2.15"
+    )
+  )
+
+lazy val typelevel = (project in file("02_typelevel"))
+  .settings(
+    libraryDependencies ++= Seq(
+      "org.typelevel"   %% "cats-core"    % "2.0.0",
+      "org.typelevel"   %% "cats-effect"  % "2.0.0",
+      "org.scalatest"   %% "scalatest"    % "3.2.15"
+    )
+  )
 
 scalacOptions ++= Seq(
   "-deprecation",

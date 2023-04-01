@@ -9,8 +9,6 @@ sbt check
 ## content
 
 ```
-├─ main
-└─ test
-   ├─ Enum
-   └─ State
+├─ snippets
+└─ typelevel
 ```

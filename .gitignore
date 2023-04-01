@@ -2,13 +2,12 @@
 
 logs
 target
-/.bsp
-/.idea
-/.logs
+.bsp
+.idea
+.logs
 /.idea_modules
 /.classpath
 /.project
 /.settings
 /RUNNING_PID
 *.cache
-/clippings/src/test/.files
