@@ -1,4 +1,4 @@
-package pod.enumeratum
+package pod.template
 
 import org.scalatest.funsuite.AnyFunSuite
 
