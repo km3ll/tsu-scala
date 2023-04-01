@@ -2,6 +2,17 @@ name := "tsu-scala"
 version := "0.1"
 scalaVersion := "2.12.8"
 
+// Modules
+lazy val template = (project in file("00_template"))
+  .settings(
+    libraryDependencies ++= Seq(
+      "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
+      "com.typesafe"                %  "config"           % "1.3.2",
+      "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
+      "org.scalatest"               %% "scalatest"        % "3.2.15"
+    )
+  )
+
 libraryDependencies ++= Seq(
     "org.typelevel"               %% "cats-core"       % "2.0.0",
     "org.typelevel"               %% "cats-effect"     % "2.0.0",
