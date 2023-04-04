@@ -6,7 +6,7 @@ scalaVersion := "2.12.8"
 lazy val root = (project in file("."))
   .aggregate(template, snippets, typelevel)
 
-lazy val template = (project in file("00_template"))
+lazy val template = (project in file("0_base"))
   .settings(
     libraryDependencies ++= Seq(
       "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
@@ -16,7 +16,7 @@ lazy val template = (project in file("00_template"))
     )
   )
 
-lazy val snippets = (project in file("01_snippets"))
+lazy val snippets = (project in file("1_snippets"))
   .settings(
     libraryDependencies ++= Seq(
       "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
@@ -27,7 +27,7 @@ lazy val snippets = (project in file("01_snippets"))
     )
   )
 
-lazy val typelevel = (project in file("02_typelevel"))
+lazy val typelevel = (project in file("2_typelevel"))
   .settings(
     libraryDependencies ++= Seq(
       "org.typelevel"   %% "cats-core"    % "2.0.0",
