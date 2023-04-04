@@ -10,5 +10,9 @@ sbt check
 
 ```
 ├─ snippets
+│  └─ [x] Enumeratum
 └─ typelevel
+   ├─ datatype
+   └─ typeclass
+      └─ [x] State
 ```

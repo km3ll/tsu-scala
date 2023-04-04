@@ -4,9 +4,9 @@ scalaVersion := "2.12.8"
 
 // Modules
 lazy val root = (project in file("."))
-  .aggregate(template, snippets, typelevel)
+  .aggregate(base, snippets, typelevel)
 
-lazy val template = (project in file("0_base"))
+lazy val base = (project in file("0_base"))
   .settings(
     libraryDependencies ++= Seq(
       "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
