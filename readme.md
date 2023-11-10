@@ -20,13 +20,3 @@ sbt check
 ## features
 
 ## tutorials
-
-
-```
-├─ snippets
-│  └─ [x] Enumeratum
-└─ typelevel
-   ├─ datatype
-   └─ typeclass
-      └─ [x] State
-```
