@@ -1,4 +1,4 @@
-package pod.typelevel.typeclass.state
+package pod.tsu.scala.typelevel.typeclass.state
 
 import org.scalatest.funsuite.AnyFunSuite
 import StatePod._

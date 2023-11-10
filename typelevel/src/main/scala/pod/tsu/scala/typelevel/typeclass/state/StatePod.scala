@@ -1,4 +1,4 @@
-package pod.typelevel.typeclass.state
+package pod.tsu.scala.typelevel.typeclass.state
 
 import cats.data.State
 

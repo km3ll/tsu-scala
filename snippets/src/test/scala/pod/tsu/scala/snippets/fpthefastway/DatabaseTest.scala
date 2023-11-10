@@ -1,4 +1,4 @@
-package pod.fpthefastway.database
+package pod.tsu.scala.snippets.fpthefastway
 
 import org.scalatest.flatspec.AnyFlatSpecLike
 import org.scalatest.matchers.should.Matchers
