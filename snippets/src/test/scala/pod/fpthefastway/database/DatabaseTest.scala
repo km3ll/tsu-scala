@@ -8,10 +8,10 @@ class DatabaseTest extends AnyFlatSpecLike with Matchers {
   "DatabaseInFile" should "insert a record" in {
 
     // Given
-    val db = new DatabaseInFile(".files/database.txt")
+    val db = new DatabaseInFile( ".files/database.txt" )
 
     // When
-    val result = db.insert("Domo Arigato")
+    val result = db.insert( "Domo Arigato" )
 
     // Then
     result.isSuccess shouldBe true
@@ -21,7 +21,7 @@ class DatabaseTest extends AnyFlatSpecLike with Matchers {
   it should "select all records" in {
 
     // Given
-    val db = new DatabaseInFile(".files/database.txt")
+    val db = new DatabaseInFile( ".files/database.txt" )
 
     // When
     val result = db.selectAll()
@@ -30,7 +30,5 @@ class DatabaseTest extends AnyFlatSpecLike with Matchers {
     result.isSuccess shouldBe true
 
   }
-
-
 
 }
