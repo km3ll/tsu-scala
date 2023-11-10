@@ -2,7 +2,6 @@ package pod.tsu.scala.typelevel.typeclass.state
 
 import cats.data.State
 
-// Reference: https://typelevel.org/cats/datatypes/state.html
 object StatePod {
 
   final case class Robot(
