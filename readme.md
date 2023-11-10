@@ -1,14 +1,22 @@
 # tsu-scala
 
-## command
+- [modules](#modules)
+- [commands](#commands)
+- [tutorials](#features)
+- [tutorials](#features)
+
+## modules
+
+- [snippets](snippets)
+- [testing](testing)
+- [typelevel](typelevel)
+
+## commands
 
 ```bash
 sbt check
 ```
 
-## content
+## features
 
-```
-├─ snippets
-└─ typelevel
-```
+## tutorials
