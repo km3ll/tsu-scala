@@ -2,8 +2,7 @@
 
 - [modules](#modules)
 - [commands](#commands)
-- [tutorials](#features)
-- [tutorials](#features)
+- [tutorials](#tutorials)
 
 ## modules
 
@@ -17,6 +16,6 @@
 sbt check
 ```
 
-## features
-
 ## tutorials
+
+- State datatype: [blog](https://typelevel.org/cats/datatypes/state.html)
