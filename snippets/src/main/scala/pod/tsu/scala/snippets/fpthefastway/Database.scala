@@ -1,4 +1,4 @@
-package pod.fpthefastway.database
+package pod.tsu.scala.snippets.fpthefastway
 
 import java.io.{ BufferedWriter, File, FileWriter }
 import scala.io.{ BufferedSource, Source }

@@ -1,4 +1,4 @@
-package pod.template
+package pod.tsu.scala.testing
 
 import org.scalatest.funsuite.AnyFunSuite
 
