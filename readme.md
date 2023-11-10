@@ -7,6 +7,10 @@
 
 ## modules
 
+- [snippets](snippets)
+- [testing](testing)
+- [typelevel](typelevel)
+
 ## commands
 
 ```bash

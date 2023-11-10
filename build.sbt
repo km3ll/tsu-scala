@@ -28,35 +28,32 @@ addCommandAlias( "check", "clean; compile; test:compile; test")
 
 // Modules
 lazy val root = (project in file("."))
-  .aggregate(base, snippets, typelevel)
+  .aggregate(snippets, testing, typelevel)
 
+lazy val common = Seq(
+  "com.typesafe"                %  "config"           % "1.3.2",
+  "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
+  "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
+  "org.scalatest"               %% "scalatest"        % "3.2.15"
+)
 
-lazy val snippets = (project in file("1_snippets"))
+lazy val snippets = (project in file("snippets"))
   .settings(
-    libraryDependencies ++= Seq(
-      "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
-      "com.beachape"                %% "enumeratum"       % "1.7.2",
-      "com.typesafe"                %  "config"           % "1.3.2",
-      "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
-      "org.scalatest"               %% "scalatest"        % "3.2.15"
+    libraryDependencies ++= common ++ Seq(
+      "com.beachape"            %% "enumeratum"       % "1.7.2"
     )
   )
 
-lazy val typelevel = (project in file("2_typelevel"))
+lazy val typelevel = (project in file("typelevel"))
   .settings(
-    libraryDependencies ++= Seq(
-      "org.typelevel"   %% "cats-core"    % "2.0.0",
-      "org.typelevel"   %% "cats-effect"  % "2.0.0",
-      "org.scalatest"   %% "scalatest"    % "3.2.15"
+    libraryDependencies ++= common ++ Seq(
+      "org.scalatest"           %% "scalatest"        % "3.2.15",
+      "org.typelevel"           %% "cats-core"        % "2.0.0",
+      "org.typelevel"           %% "cats-effect"      % "2.0.0"
     )
   )
 
-lazy val base = (project in file("testing"))
+lazy val testing = (project in file("testing"))
   .settings(
-    libraryDependencies ++= Seq(
-      "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
-      "com.typesafe"                %  "config"           % "1.3.2",
-      "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
-      "org.scalatest"               %% "scalatest"        % "3.2.15"
-    )
+    libraryDependencies ++= common
   )
