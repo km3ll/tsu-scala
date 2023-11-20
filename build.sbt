@@ -1,3 +1,5 @@
+import sbt.Keys.fork
+
 name := "tsu-scala"
 version := "0.1"
 scalaVersion := "2.12.8"
@@ -28,19 +30,25 @@ addCommandAlias( "check", "clean; compile; test:compile; test")
 
 // Modules
 lazy val root = (project in file("."))
-  .aggregate(snippets, testing, typelevel)
+  .aggregate(snippets, spark, testing, typelevel)
 
 lazy val common = Seq(
   "com.typesafe"                %  "config"           % "1.3.2",
   "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
-  "ch.qos.logback"              %  "logback-classic"  % "1.1.3",
-  "org.scalatest"               %% "scalatest"        % "3.2.15"
+  "ch.qos.logback"              %  "logback-classic"  % "1.1.3"
 )
 
 lazy val snippets = (project in file("snippets"))
   .settings(
     libraryDependencies ++= common ++ Seq(
       "com.beachape"            %% "enumeratum"       % "1.7.2"
+    )
+  )
+
+lazy val spark = (project in file("spark"))
+  .settings(
+    libraryDependencies ++= common ++ Seq(
+      "org.apache.spark"        %% "spark-core"       % "2.4.8"
     )
   )
 
