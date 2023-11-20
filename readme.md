@@ -7,6 +7,7 @@
 ## modules
 
 - [snippets](snippets)
+- [spark](spark)
 - [testing](testing)
 - [typelevel](typelevel)
 
@@ -14,6 +15,7 @@
 
 ```bash
 sbt check
+sbt spark/run
 ```
 
 ## tutorials
