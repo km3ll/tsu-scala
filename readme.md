@@ -7,6 +7,7 @@
 ## modules
 
 - [snippets](snippets)
+- [spark](spark)
 - [testing](testing)
 - [typelevel](typelevel)
 
