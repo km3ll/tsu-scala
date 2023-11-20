@@ -14,6 +14,7 @@
 
 ```bash
 sbt check
+sbt spark/run
 ```
 
 ## tutorials

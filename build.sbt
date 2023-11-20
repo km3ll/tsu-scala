@@ -41,7 +41,8 @@ lazy val common = Seq(
 lazy val snippets = (project in file("snippets"))
   .settings(
     libraryDependencies ++= common ++ Seq(
-      "com.beachape"            %% "enumeratum"       % "1.7.2"
+      "com.beachape"            %% "enumeratum"       % "1.7.2",
+      "org.scalatest"           %% "scalatest"        % "3.2.15"
     )
   )
 
@@ -63,5 +64,7 @@ lazy val typelevel = (project in file("typelevel"))
 
 lazy val testing = (project in file("testing"))
   .settings(
-    libraryDependencies ++= common
+    libraryDependencies ++= common ++ Seq (
+      "org.scalatest" %% "scalatest" % "3.2.15"
+    )
   )
