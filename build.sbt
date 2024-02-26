@@ -33,7 +33,7 @@ lazy val root = (project in file("."))
   .aggregate(snippets, spark, testing, typelevel)
 
 lazy val common = Seq(
-  "com.typesafe"                %  "config"           % "1.3.2",
+  "com.typesafe"                %  "config"           % "1.4.3",
   "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.2",
   "ch.qos.logback"              %  "logback-classic"  % "1.1.3"
 )
@@ -58,7 +58,8 @@ lazy val typelevel = (project in file("typelevel"))
     libraryDependencies ++= common ++ Seq(
       "org.scalatest"           %% "scalatest"        % "3.2.15",
       "org.typelevel"           %% "cats-core"        % "2.0.0",
-      "org.typelevel"           %% "cats-effect"      % "2.0.0"
+      "org.typelevel"           %% "cats-effect"      % "2.0.0",
+      "io.monix"                %% "monix"            % "3.4.0"
     )
   )
 
