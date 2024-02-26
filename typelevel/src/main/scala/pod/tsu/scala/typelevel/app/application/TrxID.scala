@@ -13,12 +13,12 @@ case class TrxID(
 object TrxID {
 
   def apply(): TrxID = {
-    println("Assigning new correlation ID")
-    apply(UUID.randomUUID().toString)
+    println( "Assigning new correlation ID" )
+    apply( UUID.randomUUID().toString )
   }
 
-  def apply(correlationId: String): TrxID = {
-    new TrxID(correlationId)
+  def apply( correlationId: String ): TrxID = {
+    new TrxID( correlationId )
   }
 
 }

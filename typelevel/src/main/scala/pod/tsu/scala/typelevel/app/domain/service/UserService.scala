@@ -5,6 +5,6 @@ import pod.tsu.scala.typelevel.app.domain.repository.UserRepository
 
 trait UserService {
 
-  def findUser(id: String)(repository: UserRepository): Option[User]
+  def findUser( id: String )( repository: UserRepository ): Option[User]
 
 }

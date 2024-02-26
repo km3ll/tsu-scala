@@ -1,7 +1,7 @@
 package pod.tsu.scala.typelevel.app.application
 
-import com.typesafe.config.{Config, ConfigFactory}
-import pod.tsu.scala.typelevel.app.domain.repository.{UserRepository, UserRepositoryInMemory}
+import com.typesafe.config.{ Config, ConfigFactory }
+import pod.tsu.scala.typelevel.app.domain.repository.{ UserRepository, UserRepositoryInMemory }
 
 sealed trait Context {
   val config: Config
@@ -9,7 +9,7 @@ sealed trait Context {
 }
 
 case class AppContext(
-  config: Config,
+  config:         Config,
   userRepository: UserRepository
 ) extends Context
 

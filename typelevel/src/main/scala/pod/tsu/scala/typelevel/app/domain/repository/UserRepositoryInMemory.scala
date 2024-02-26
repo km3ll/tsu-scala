@@ -5,8 +5,8 @@ class UserRepositoryInMemory extends UserRepository {
 
   private val users: Set[User] = Set.empty;
 
-  def find(id: String): Option[User] = {
-    users.find(_.id == id)
+  def find( id: String ): Option[User] = {
+    users.find( _.id == id )
   }
 
 }

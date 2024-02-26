@@ -4,6 +4,6 @@ import pod.tsu.scala.typelevel.app.domain.model.User
 
 trait UserRepository {
 
-  def find(id: String): Option[User]
+  def find( id: String ): Option[User]
 
 }

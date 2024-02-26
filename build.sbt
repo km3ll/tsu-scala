@@ -58,7 +58,8 @@ lazy val typelevel = (project in file("typelevel"))
     libraryDependencies ++= common ++ Seq(
       "org.scalatest"           %% "scalatest"        % "3.2.15",
       "org.typelevel"           %% "cats-core"        % "2.0.0",
-      "org.typelevel"           %% "cats-effect"      % "2.0.0"
+      "org.typelevel"           %% "cats-effect"      % "2.0.0",
+      "io.monix"                %% "monix"            % "3.4.0"
     )
   )
 
