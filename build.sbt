@@ -1,4 +1,3 @@
-import sbt.Keys.fork
 
 name := "tsu-scala"
 version := "0.1"

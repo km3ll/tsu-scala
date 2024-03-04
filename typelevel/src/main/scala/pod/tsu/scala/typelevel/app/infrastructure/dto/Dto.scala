@@ -16,7 +16,7 @@ object Dto {
     else RequestDto( id ).asRight
   }
 
-  def responsetDto( id: String ): Either[String, ResponseDto] = {
+  def responseDto( id: String ): Either[String, ResponseDto] = {
     if ( id.isEmpty ) "Request ID is required".asLeft
     else ResponseDto( id ).asRight
   }
