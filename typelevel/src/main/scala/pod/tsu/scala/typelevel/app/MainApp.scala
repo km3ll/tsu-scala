@@ -9,7 +9,10 @@ object MainApp extends App {
 
   val context = Context.loadAppContext()
 
-  val partialResult: UserRepository => Option[User] = UserServiceImpl.findUser( "1100" )( _ )
-  val result: Option[User] = partialResult( context.userRepository )
+  val partialResult: UserRepository => Option[User] = {
+    UserServiceImpl.findUser( "1100" )( _ )
+  }
+
+  val finalResult: Option[User] = partialResult( context.userRepository )
 
 }
