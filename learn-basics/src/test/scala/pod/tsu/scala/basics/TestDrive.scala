@@ -4,8 +4,8 @@ import org.scalatest.funsuite.AnyFunSuite
 
 class TestDrive extends AnyFunSuite {
 
-  test("smoke test") {
-    assert(true)
+  test( "smoke test" ) {
+    assert( true )
   }
 
 }

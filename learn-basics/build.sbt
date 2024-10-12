@@ -6,11 +6,13 @@ lazy val root = (project in file("."))
   .settings(
     name := "learn-basics",
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % "3.2.19" % "test"
+      "com.typesafe"                %  "config"           % "1.4.3",
+      "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.5",
+      "ch.qos.logback"              %  "logback-classic"  % "1.5.9",
+      "org.scalatest"               %% "scalatest"        % "3.2.19" % "test"
     )
   )
 
-// Global
 scalacOptions ++= Seq(
   "-deprecation",
   "-encoding",
@@ -23,13 +25,9 @@ scalacOptions ++= Seq(
   "-unchecked",
   "-Xfatal-warnings",
   "-Xlint",
-  "-Yno-adapted-args",
-  "-Ypartial-unification",
   "-Ywarn-dead-code",
   "-Ywarn-numeric-widen",
-  "-Ywarn-value-discard",
-  "-Ywarn-unused-import",
-  "-Xfuture"
+  "-Ywarn-value-discard"
 )
 
 addCommandAlias( name = "check", value = "clean; compile; test:compile; test")
