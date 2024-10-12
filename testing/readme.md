@@ -1,5 +1,0 @@
-# testing
-
-## features
-
-- `ScalaTest`
