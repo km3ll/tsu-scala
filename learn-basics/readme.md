@@ -3,5 +3,5 @@
 ## commands
 
 ```base
-sbt clean
+sbt check
 ```
