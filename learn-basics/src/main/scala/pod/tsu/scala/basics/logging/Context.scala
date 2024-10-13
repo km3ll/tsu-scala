@@ -13,7 +13,8 @@ object Context {
   }
 
   def apply( transactionId: String ): Context = {
-    new Context( transactionId )
+    val id = if ( transactionId.trim.nonEmpty ) transactionId else UUID.randomUUID().toString
+    new Context( id )
   }
 
 }
