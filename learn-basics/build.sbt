@@ -9,6 +9,8 @@ lazy val root = (project in file("."))
       "com.typesafe"                %  "config"           % "1.4.3",
       "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.5",
       "ch.qos.logback"              %  "logback-classic"  % "1.5.9",
+      // Testing
+      "org.scalacheck"              %% "scalacheck"       % "1.14.1" % "test",
       "org.scalatest"               %% "scalatest"        % "3.2.19" % "test"
     )
   )
@@ -31,3 +33,5 @@ scalacOptions ++= Seq(
 )
 
 addCommandAlias( name = "check", value = "clean; compile; test:compile; test")
+
+Test / parallelExecution := true
