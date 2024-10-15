@@ -6,6 +6,39 @@
 sbt check
 ```
 
+## proposal
+
+- Circe
+- Companion Objects
+- Currying
+- Custom Types
+- Either
+- EitherT
+  - .cond
+  - .fromEither
+  - .left
+  - .pure
+  - .right
+- Environment
+- Execution Context
+- For-Comprehension
+- Functions
+  - .flatMap
+  - .fold
+  - .headOption
+  - .map
+- Future
+- Generics
+- Implicits
+- Kleisli
+- Monix
+- Option
+- Pattern Matching
+- Scheduler
+- Task
+- Transformers
+- Try
+
 ## topics
 
 - Asynchronous test
