@@ -6,6 +6,14 @@
 sbt check
 ```
 
+## topics
+
+- Asynchronous test
+- Configurations
+- Generators
+- Logging
+- Property test
+
 ## references
 
 - [ScalaCheck](https://github.com/typelevel/scalacheck/blob/main/doc/UserGuide.md)
