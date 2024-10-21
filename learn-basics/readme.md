@@ -14,7 +14,8 @@ sbt check
   - .encode
   - .noSpaces
 - Companion Objects
-- Context (trx)
+- Context
+  - transaction
 - Currying
 - Custom Types
 - Either
@@ -33,6 +34,10 @@ sbt check
 - Environment
 - Event
 - Execution Context
+- Generics
+  - C <: Context
+  - D <: Dto
+  - R <: Response
 - For-Comprehension
 - Functions
   - .flatMap
@@ -43,15 +48,17 @@ sbt check
   - .mapN
   - .toValidatedNel
 - Future
+  - .successful
 - Generics
 - HOF
 - Implicit
-  - def
-  - val
+  - ExecutionContext
+  - Scheduler
 - Integer
   - .abs
 - Kleisli
   - .mapF (future)
+  - .liftF
   - .run
 - List
   - .empty
@@ -60,6 +67,7 @@ sbt check
   - .headOption
   - .size
   - ::: (add)
+  - ++
 - Map
   - .empty
 - Monix
@@ -67,15 +75,19 @@ sbt check
   - .getOrElse
   - .nonEmpty
   - .some
+  - .toRight
 - Pattern Matching
 - Queue
 - Scheduler
 - String
   - .contains
   - .hashCode
+  - .length
   - .toLowerCase
   - .replace
   - .replaceAll
+- StringLike
+  - .format
 - Task
   - .flatten
   - .now
@@ -84,6 +96,13 @@ sbt check
 - Transformers
 - Try
   - .toOption
+- Validated
+- ZonedDateTime
+  - .format
+  - .isAfter
+  - .parse
+  - .plusDays
+  - .truncatedTo
 
 ## topics
 
