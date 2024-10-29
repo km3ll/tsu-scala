@@ -1,4 +1,4 @@
-package pod.tsu.scala.basics.testing
+package pod.tsu.scala.basics.testing.async
 
 import org.scalatest.flatspec.AsyncFlatSpec
 

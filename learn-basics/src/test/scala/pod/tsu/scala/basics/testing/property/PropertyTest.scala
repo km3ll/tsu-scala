@@ -1,8 +1,8 @@
-package pod.tsu.scala.basics.testing
+package pod.tsu.scala.basics.testing.property
 
-import org.scalacheck.Properties
 import org.scalacheck.Prop.forAll
-import pod.tsu.scala.basics.testkit.Generator
+import org.scalacheck.Properties
+import pod.tsu.scala.basics.testing.generator.Generator
 
 object PropertyTest extends Properties( "Generator" ) {
 
