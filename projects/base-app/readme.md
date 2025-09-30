@@ -1,4 +1,4 @@
-# learn-basics
+# base-app
 
 ## commands
 
@@ -6,7 +6,7 @@
 sbt check
 ```
 
-## proposal
+## proposals
 
 - Circe
 - Companion Objects

@@ -1,4 +1,4 @@
-package pod.tsu.scala.basics.testkit
+package pod.tsu.baseapp.testkit
 
 import org.scalacheck.Gen
 

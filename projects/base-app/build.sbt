@@ -4,12 +4,11 @@ ThisBuild / organization     := "tsu.pod.scala"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "learn-basics",
+    name := "base-app",
     libraryDependencies ++= Seq(
       "com.typesafe"                %  "config"           % "1.4.3",
       "com.typesafe.scala-logging"  %% "scala-logging"    % "3.9.5",
       "ch.qos.logback"              %  "logback-classic"  % "1.5.9",
-      // Testing
       "org.scalacheck"              %% "scalacheck"       % "1.14.1" % "test",
       "org.scalatest"               %% "scalatest"        % "3.2.19" % "test"
     )

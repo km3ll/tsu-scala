@@ -1,4 +1,4 @@
-package pod.tsu.scala.basics.config
+package pod.tsu.baseapp.config
 
 import com.typesafe.config.ConfigFactory
 import org.scalatest.funsuite.AnyFunSuite
