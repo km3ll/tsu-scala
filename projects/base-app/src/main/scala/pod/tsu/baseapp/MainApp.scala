@@ -1,4 +1,4 @@
-package pod.tsu.scala.basics
+package pod.tsu.baseapp
 
 import com.typesafe.scalalogging.LazyLogging
 

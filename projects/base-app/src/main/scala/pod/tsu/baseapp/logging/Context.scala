@@ -1,4 +1,4 @@
-package pod.tsu.scala.basics.logging
+package pod.tsu.baseapp.logging
 
 import java.util.UUID
 
